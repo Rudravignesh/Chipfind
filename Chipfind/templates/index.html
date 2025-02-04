@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Assistance App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Job Assistance App</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="file">Upload CSV File:</label>
+        <input type="file" name="file" id="file" accept=".csv" required>
+        <button type="submit">Process File</button>
+    </form>
+
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+
+    {% if download %}
+    <a href="/download">Download Cleaned File</a>
+    {% endif %}
+</body>
+</html>
