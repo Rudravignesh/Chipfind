@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>237d7d4e-ddb4-48d1-84a3-64d2e56fb2b5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Chipfind.py</StartupFile>
+    <StartupFile>app.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Chipfind.py" />
+    <Compile Include="app.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="static\" />

@@ -61,5 +61,5 @@ def flag_non_existent_mpns(df):
     return df
 
 if __name__ == "__main__":
-    app.run(debug=True, threaded=False)
-    serve(app, host="0.0.0.0", port=5000)
+    app.run()
+    
